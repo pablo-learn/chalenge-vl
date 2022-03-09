@@ -1,7 +1,7 @@
 export const getData = async id => {
     //TODO: revisar el try catch
     try {
-        // console.log(`http://localhost:3000/shipments`);
+        console.log(`Golpe >>> http://localhost:3000/shipments${id ? `/${id}` : ""}`);
         const response = await fetch(
             `http://localhost:3000/shipments${id ? `/${id}` : ""}`
         );
