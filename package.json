@@ -1,0 +1,15 @@
+{
+    "name": "vexels-frontend-challenge",
+    "version": "1.0.0",
+    "description": "Vexels Frontend Coding Challenge",
+    "main": "index.js",
+    "repository": "git@github.com:vexels/frontend-react-challenge.git",
+    "author": "Fausto Sanchez",
+    "license": "MIT",
+    "scripts": {
+      "server": "json-server db.json"
+    },
+    "dependencies": {
+      "json-server": "^0.14.2"
+    }
+  }
