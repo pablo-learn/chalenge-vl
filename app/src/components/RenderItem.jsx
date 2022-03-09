@@ -7,7 +7,7 @@ export default function RenderItem({ id }) {
 
     useEffect(async () => {
         const res = await getData(id);
-        console.log(res);
+        // console.log(res);
         setItem(res);
     }, []);
 
@@ -28,7 +28,8 @@ export default function RenderItem({ id }) {
                         {item?.cargo?.map((item, i) => (
                             <ul key={i} className="bg-white border-b-2">
                                 <li>Type:{item?.type || "not specified"}</li>
-                                <li>destination:{item?.destination}</li>
+                                <li>destination:{item?.description}</li>
+                                <li>destination:{item?.volume}</li>
                             </ul>
                         ))}{" "}
                     </ul>
